@@ -43,10 +43,9 @@ function checkWinner() {
   updateSelection(userSelect, userChoice);
   updateSelection(pc, computerChoice);
 
-
   if (
     (userChoice === 'paper' && computerChoice === 'rock') ||
-    (userChoice === 'rock' && userChoice === 'scissors') ||
+    (userChoice === 'rock' && computerChoice === 'scissors') ||
     (userChoice === 'scissors' && computerChoice === 'paper')
   ) {
     //user win
