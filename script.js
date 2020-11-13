@@ -81,6 +81,7 @@ function updateSelection(selectionEl, choice) {
 
   selectionEl.classList.add(`icon--wrap-${choice}`);
   img.src = `/images/icon-${choice}.svg`;
+  img.alt = `${choice}`
 }
 
 
