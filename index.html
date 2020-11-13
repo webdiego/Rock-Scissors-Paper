@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+  <div class="container ">
+   <div class="show-rules hidden ">
+     <div class="show-rules-rules ">
+
+       <div class="show-rules-text">
+         <h3 class="show-rules-title">Rules</h3>
+         <h3 class="show-rules-x">X</h3>
+
+       </div>
+       
+       <img src="./images/image-rules.svg"" srcset="">
+     </div>
+   </div>
+    <!-- S C O R E -->
+    <div class="scores">
+      <div class="scores--names">
+        <h2>Rock</h2>
+        <h2>Paper</h2>
+        <h2>Scissor</h2>
+      </div>
+      <div class="scores--container">
+        <h2 class="scores--title">SCORE</h2>
+        <div id="score" class="scores--number">
+          0
+        </div>
+      </div>
+
+
+    </div>
+
+
+     <!-- M A I N -->
+    <div class="choices" id="main">
+    <div class="choices--first-step">
+      <div class="icon--wrap">
+      <div class="icon--wrap-top">
+        <div class="your-choice">  
+          <!-- P A P E R  -->
+         <div id="circle" class="icon--wrap-paper"  data-choice ='paper'>
+           <div class="icon--wrap-white">
+             <img  class="icon" src="./images/icon-paper.svg" alt="" srcset="">
+           </div>
+         </div> 
+       </div>
+
+       <div class="line "></div>
+          
+          <div class="choice-computer">
+            
+            <!-- S C I S S O R -->
+            <div id="circle" class="icon--wrap-scissors" data-choice ='scissors'>
+              <div class="icon--wrap-white">
+               <img  class="icon" src="./images/icon-scissors.svg" alt="" srcset="">
+             </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="icon--wrap-bottom">
+
+        <div class="line line-2 "></div>
+        <div class="line line-3"></div>
+
+        <!-- R O C K -->
+       <div id="circle"  class="icon--wrap-rock"  data-choice ='rock'>
+       <div class="icon--wrap-white">
+         <img  class="icon" src="./images/icon-rock.svg" alt="" srcset="">
+       </div>
+       
+       </div>
+     </div>
+      </div>
+    </div>    
+  </div>
+
+
+  <!--             OUR            -->
+ 
+<div class="choices" id="selection" >
+      <div class="choices--turn ">
+        <h3>You Picked</h3>
+        <h3>The House Picked</h3>
+      </div>
+
+
+      
+    <div class="choices--first-step">
+      <div class="icon--wrap">
+      <div class="icon--wrap-top">
+        <div class="your-choice"> 
+          <!-- P A P E R  -->
+
+         <div id="user-select" class="icon--wrap-paper"  >
+           <div class="icon--wrap-white">
+             <img  class="icon" src="./images/icon-paper.svg" alt="" srcset="">
+           </div>
+         </div>
+         
+       </div>
+
+
+          <div class="play ">
+             <h2 class="win" >You Win </h2>
+             <button class="play-again">Play again</button>
+          </div>
+         
+          <div  class="choice-computer">  
+      
+            <div  id="pc" class="icon--wrap-scissors  ">
+              <div class="icon--wrap-white">
+               <img  class="icon" src="./images/icon-scissors.svg" alt="" srcset="">
+             </div>
+            </div>
+          </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <!-- C H O I C E S -->
+  <div class="rules">
+    <button class="rules-btn">RULES</button>
+  </div>
+
+
+</div>
+  
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Diego Massarini</a>.
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
